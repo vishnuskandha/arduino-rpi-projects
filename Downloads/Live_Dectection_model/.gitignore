@@ -1,0 +1,137 @@
+# YOLOv13 specific
+*.pt
+*.pth
+*.onnx
+*.engine
+*.trt
+*.weights
+
+# Output files
+output_*.mp4
+enhanced_screenshot_*.jpg
+*.avi
+*.mov
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+*.tmp
+*.temp
+
+# Additional YOLOv13 specific ignores
+models/
+checkpoints/
+runs/
+wandb/
+*.ckpt
+*.safetensors
+
+# Large data files
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.flv
+*.webm
+*.m4v
+
+# Dataset files
+datasets/
+data/
+*.jpg
+*.jpeg
+*.png
+*.bmp
+*.tiff
+*.tif
+
+# Model cache and downloads
+.cache/
+downloads/
+pretrained/
+
+# Jupyter notebook outputs
+.ipynb_checkpoints/
+*.ipynb
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# Python specific
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Testing and coverage
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+htmlcov/
+
+# Documentation
+docs/_build/
+site/
+
+# Logs and databases
+*.log
+*.sqlite
+*.db
+
+# Temporary and backup files
+*.tmp
+*.temp
+*.bak
+*.backup
+*.orig
+
