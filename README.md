@@ -21,6 +21,9 @@ A comprehensive collection of Arduino and Raspberry Pi projects for IoT, robotic
 | [👁️ PIR Motion Light](pir-motion-light/) | Motion-activated lighting system | ✅ | ✅ | Complete |
 | [📹 Servo Camera](servo-camera/) | Pan/tilt camera with object tracking | ✅ | ✅ | Complete |
 | [📏 Ultrasonic](ultrasonic/) | Distance measurement with HC-SR04 | ✅ | ❌ | Complete |
+| [🤖 Obstacle Avoiding Robot](obstacle-avoiding-robot/) | Autonomous robot that dodges obstacles using ultrasonic | ✅ | ❌ | New |
+| [🔐 RFID Access Control](rfid-access-control/) | RFID-based door lock with servo | ✅ | ❌ | New |
+| [🌤 Weather Station](weather-station/) | Multi-sensor weather station with Pi logging | ✅ | ✅ | New |
 
 ## 🚀 Quick Start
 
