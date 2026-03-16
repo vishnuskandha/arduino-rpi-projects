@@ -26,6 +26,7 @@ A comprehensive collection of Arduino and Raspberry Pi projects for IoT, robotic
 | [🌤 Weather Station](weather-station/) | Multi-sensor weather station with Pi logging | ✅ | ✅ | New |
 | [📡 ESP32 Web Server + OTA](esp32-web-server-ota/) | WiFi AP with web GPIO control and over-the-air updates | ✅ | ❌ | New |
 | [📹 Raspberry Pi Motion Detection](raspberry-pi-motion-detection/) | Motion-triggered camera with Telegram alerts | ❌ | ✅ | New |
+| [🌡 MQTT Temperature Logger](mqtt-temperature-logger/) | Arduino DHT22 → MQTT → Pi CSV + live chart | ✅ | ✅ | New |
 
 ## 🚀 Quick Start
 

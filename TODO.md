@@ -1,7 +1,7 @@
 # Todo: Arduino/RPi Mini Projects Implementation
 
 ## Selected Project
-2. Raspberry Pi Motion Detection Camera with Telegram Alerts ✅ DONE
+3. Arduino + Raspberry Pi MQTT Temperature/Humidity Logger ✅ DONE
 
 ## Implementation Checklist
 
@@ -27,4 +27,5 @@
 - [x] Error handling (where appropriate)
 - [x] No hardcoded WiFi passwords (use placeholders)
 - [x] License: MIT (inherit from repo)
+
 
