@@ -1,7 +1,7 @@
 # Todo: Arduino/RPi Mini Projects Implementation
 
 ## Selected Project
-1. ESP32 Web Server + GPIO Control + OTA ✅ DONE
+2. Raspberry Pi Motion Detection Camera with Telegram Alerts ✅ DONE
 
 ## Implementation Checklist
 
@@ -27,3 +27,4 @@
 - [x] Error handling (where appropriate)
 - [x] No hardcoded WiFi passwords (use placeholders)
 - [x] License: MIT (inherit from repo)
+

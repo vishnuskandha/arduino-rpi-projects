@@ -25,6 +25,7 @@ A comprehensive collection of Arduino and Raspberry Pi projects for IoT, robotic
 | [🔐 RFID Access Control](rfid-access-control/) | RFID-based door lock with servo | ✅ | ❌ | New |
 | [🌤 Weather Station](weather-station/) | Multi-sensor weather station with Pi logging | ✅ | ✅ | New |
 | [📡 ESP32 Web Server + OTA](esp32-web-server-ota/) | WiFi AP with web GPIO control and over-the-air updates | ✅ | ❌ | New |
+| [📹 Raspberry Pi Motion Detection](raspberry-pi-motion-detection/) | Motion-triggered camera with Telegram alerts | ❌ | ✅ | New |
 
 ## 🚀 Quick Start
 
