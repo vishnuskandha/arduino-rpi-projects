@@ -24,6 +24,7 @@ A comprehensive collection of Arduino and Raspberry Pi projects for IoT, robotic
 | [🤖 Obstacle Avoiding Robot](obstacle-avoiding-robot/) | Autonomous robot that dodges obstacles using ultrasonic | ✅ | ❌ | New |
 | [🔐 RFID Access Control](rfid-access-control/) | RFID-based door lock with servo | ✅ | ❌ | New |
 | [🌤 Weather Station](weather-station/) | Multi-sensor weather station with Pi logging | ✅ | ✅ | New |
+| [📡 ESP32 Web Server + OTA](esp32-web-server-ota/) | WiFi AP with web GPIO control and over-the-air updates | ✅ | ❌ | New |
 
 ## 🚀 Quick Start
 
