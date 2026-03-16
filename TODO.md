@@ -1,7 +1,7 @@
 # Todo: Arduino/RPi Mini Projects Implementation
 
 ## Selected Project
-4. ESP32 Air Quality Monitor with Web Dashboard ✅ DONE
+5. Arduino Smart Lock with Keypad + RFID + Pi Logging ✅ DONE
 
 ## Implementation Checklist
 
@@ -27,6 +27,7 @@
 - [x] Error handling (where appropriate)
 - [x] No hardcoded WiFi passwords (use placeholders)
 - [x] License: MIT (inherit from repo)
+
 
 
 

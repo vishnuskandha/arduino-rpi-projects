@@ -28,6 +28,7 @@ A comprehensive collection of Arduino and Raspberry Pi projects for IoT, robotic
 | [📹 Raspberry Pi Motion Detection](raspberry-pi-motion-detection/) | Motion-triggered camera with Telegram alerts | ❌ | ✅ | New |
 | [🌡 MQTT Temperature Logger](mqtt-temperature-logger/) | Arduino DHT22 → MQTT → Pi CSV + live chart | ✅ | ✅ | New |
 | [💨 ESP32 Air Quality Monitor](esp32-air-quality-monitor/) | MQ-135 + DHT22 with built-in web dashboard | ✅ | ❌ | New |
+| [🔏 Arduino Smart Lock](arduino-smart-lock/) | Keypad/RFID door lock with Pi logging | ✅ | ✅ | New |
 
 ## 🚀 Quick Start
 
