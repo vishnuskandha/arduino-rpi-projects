@@ -1,7 +1,7 @@
 # Todo: Arduino/RPi Mini Projects Implementation
 
 ## Selected Project
-3. Arduino + Raspberry Pi MQTT Temperature/Humidity Logger ✅ DONE
+4. ESP32 Air Quality Monitor with Web Dashboard ✅ DONE
 
 ## Implementation Checklist
 
@@ -27,5 +27,6 @@
 - [x] Error handling (where appropriate)
 - [x] No hardcoded WiFi passwords (use placeholders)
 - [x] License: MIT (inherit from repo)
+
 
 

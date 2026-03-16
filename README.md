@@ -27,6 +27,7 @@ A comprehensive collection of Arduino and Raspberry Pi projects for IoT, robotic
 | [📡 ESP32 Web Server + OTA](esp32-web-server-ota/) | WiFi AP with web GPIO control and over-the-air updates | ✅ | ❌ | New |
 | [📹 Raspberry Pi Motion Detection](raspberry-pi-motion-detection/) | Motion-triggered camera with Telegram alerts | ❌ | ✅ | New |
 | [🌡 MQTT Temperature Logger](mqtt-temperature-logger/) | Arduino DHT22 → MQTT → Pi CSV + live chart | ✅ | ✅ | New |
+| [💨 ESP32 Air Quality Monitor](esp32-air-quality-monitor/) | MQ-135 + DHT22 with built-in web dashboard | ✅ | ❌ | New |
 
 ## 🚀 Quick Start
 
