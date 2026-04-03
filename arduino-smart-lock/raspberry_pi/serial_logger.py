@@ -30,16 +30,16 @@ def main():
             line = ser.readline().decode('utf-8').strip()
             if not line.startswith('LOG,'):
                 continue
-            parts = line.split(',)
+            parts = line.split(',')
             if len(parts) < 4:
                 continue
-            method = parts[1]  # PIN or RFID
-            identifier = parts[2]
-            now = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+            timestamp = parts[1]
+            method = parts[2]  # PIN or RFID
+            identifier = parts[3]
             with open(LOG_FILE, 'a', newline='') as f:
                 writer = csv.writer(f)
-                writer.writerow([now, method, identifier])
-            print(f"[logger] {now} {method} {identifier}")
+                writer.writerow([timestamp, method, identifier])
+            print(f"[logger] {timestamp} {method} {identifier}")
         except Exception as e:
             print(f"[error] {e}")
 
