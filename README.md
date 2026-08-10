@@ -1,97 +1,71 @@
-# 🔥 Arduino & Raspberry Pi Projects
+# Arduino & Raspberry Pi Projects
 
+[![CI](https://github.com/vishnuskandha/arduino-rpi-projects/actions/workflows/ci.yml/badge.svg)](https://github.com/vishnuskandha/arduino-rpi-projects/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Arduino](https://img.shields.io/badge/Arduino-1.8.19-blue.svg)](https://www.arduino.cc/)
-[![Python](https://img.shields.io/badge/Python-3.8+-green.svg)](https://www.python.org/)
 
-A comprehensive collection of Arduino and Raspberry Pi projects for IoT, robotics, and automation enthusiasts. Each project includes detailed documentation, circuit diagrams, and tested hardware configurations.
+A collection of 19 Arduino, ESP32, and Raspberry Pi projects covering IoT, robotics, and automation. Each project lives in its own folder with a README, an `arduino/` subfolder for sketches (`.ino`), and/or a `raspberry_pi/` subfolder for Python scripts (`.py`).
 
-## 📋 Project Overview
+## Projects
 
-| Project | Description | Arduino | Raspberry Pi | Status |
-|---------|-------------|---------|--------------|--------|
-| [🔵 Bluetooth Car](bluetooth-car/) | Bluetooth-controlled car with joystick support | ✅ | ❌ | Complete |
-| [🤖 Bluetooth Robot](bluetooth-robot/) | Bluetooth-controlled robot with serial commands | ✅ | ❌ | Complete |
-| [🔥 Fire Detection & Suppression](fire-detection-suppression/) | Automated fire detection with servo-controlled suppression | ✅ | ✅ | Complete |
-| [🔥 Fire Detection](fire-detection/) | Basic fire detection system | ✅ | ❌ | Complete |
-| [📡 IR Remote](ir-remote/) | Infrared remote control system | ✅ | ❌ | Complete |
-| [💡 LED Blink RPi](led-blink-rpi/) | Raspberry Pi LED control | ❌ | ✅ | Complete |
-| [📡 LoRa ESP32](lora-esp32/) | Long-range communication with ESP32 | ✅ | ❌ | Complete |
-| [🔥 Pi Fire Tracker](pi-fire-tracker/) | Camera-based fire tracking system | ❌ | ✅ | Complete |
-| [👁️ PIR Motion Light](pir-motion-light/) | Motion-activated lighting system | ✅ | ✅ | Complete |
-| [📹 Servo Camera](servo-camera/) | Pan/tilt camera with object tracking | ✅ | ✅ | Complete |
-| [📏 Ultrasonic](ultrasonic/) | Distance measurement with HC-SR04 | ✅ | ❌ | Complete |
-| [🤖 Obstacle Avoiding Robot](obstacle-avoiding-robot/) | Autonomous robot that dodges obstacles using ultrasonic | ✅ | ❌ | New |
-| [🔐 RFID Access Control](rfid-access-control/) | RFID-based door lock with servo | ✅ | ❌ | New |
-| [🌤 Weather Station](weather-station/) | Multi-sensor weather station with Pi logging | ✅ | ✅ | New |
-| [📡 ESP32 Web Server + OTA](esp32-web-server-ota/) | WiFi AP with web GPIO control and over-the-air updates | ✅ | ❌ | New |
-| [📹 Raspberry Pi Motion Detection](raspberry-pi-motion-detection/) | Motion-triggered camera with Telegram alerts | ❌ | ✅ | New |
-| [🌡 MQTT Temperature Logger](mqtt-temperature-logger/) | Arduino DHT22 → MQTT → Pi CSV + live chart | ✅ | ✅ | New |
-| [💨 ESP32 Air Quality Monitor](esp32-air-quality-monitor/) | MQ-135 + DHT22 with built-in web dashboard | ✅ | ❌ | New |
-| [🔏 Arduino Smart Lock](arduino-smart-lock/) | Keypad/RFID door lock with Pi logging | ✅ | ✅ | New |
+| Project | Description | Arduino/ESP32 | Raspberry Pi |
+|---------|-------------|---------------|--------------|
+| [arduino-smart-lock](arduino-smart-lock/) | Keypad PIN and RFID door lock with serial event logging to a Pi | Yes | Yes |
+| [bluetooth-car](bluetooth-car/) | Bluetooth joystick controller and car receiver (two Arduinos, HC-05/06) | Yes | No |
+| [bluetooth-robot](bluetooth-robot/) | Arduino robot driven by serial commands over a Bluetooth module | Yes | No |
+| [esp32-air-quality-monitor](esp32-air-quality-monitor/) | ESP32 reads MQ-135 + DHT22 and serves a live web dashboard | Yes | No |
+| [esp32-web-server-ota](esp32-web-server-ota/) | ESP32 soft-AP web server with GPIO control and OTA updates | Yes | No |
+| [fire-detection](fire-detection/) | Flame-sensor based fire detection with Arduino | Yes | No |
+| [fire-detection-suppression](fire-detection-suppression/) | Pi (OpenCV) fire detection driving Arduino servo/relay suppression | Yes | Yes |
+| [ir-remote](ir-remote/) | IR receiver that reacts to remote button presses | Yes | No |
+| [led-blink-rpi](led-blink-rpi/) | Blink an LED from a Raspberry Pi GPIO | No | Yes |
+| [lora-esp32](lora-esp32/) | Long-range LoRa sender/receiver example with ESP32 + SX127x | Yes | No |
+| [mqtt-temperature-logger](mqtt-temperature-logger/) | DHT22 to MQTT on Arduino, logged to CSV and charted on a Pi | Yes | Yes |
+| [obstacle-avoiding-robot](obstacle-avoiding-robot/) | Robot that dodges obstacles using an HC-SR04 ultrasonic sensor | Yes | No |
+| [pi-fire-tracker](pi-fire-tracker/) | Camera-based hotspot/fire detection on a Raspberry Pi | No | Yes |
+| [pir-motion-light](pir-motion-light/) | Motion-activated light with PIR, Arduino or Pi | Yes | Yes |
+| [raspberry-pi-motion-detection](raspberry-pi-motion-detection/) | Motion-triggered camera with Telegram image alerts | No | Yes |
+| [rfid-access-control](rfid-access-control/) | RC522 RFID reader driving a servo lock | Yes | No |
+| [servo-camera](servo-camera/) | Pan/tilt servo camera with optional OpenCV detection | Yes | Yes |
+| [ultrasonic](ultrasonic/) | HC-SR04 ultrasonic distance measurement | Yes | No |
+| [weather-station](weather-station/) | Multi-sensor weather station with Pi logging/dashboard | Yes | Yes |
 
-## 🚀 Quick Start
+## Quick Start
 
-1. **Clone the repository:**
+1. Clone the repository:
+
    ```bash
    git clone https://github.com/vishnuskandha/arduino-rpi-projects.git
    cd arduino-rpi-projects
    ```
 
-2. **Choose a project** from the table above
-3. **Navigate to the project folder** and read the README
-4. **Follow the setup instructions** for hardware and software
-5. **Upload/run the code** and enjoy!
+2. Pick a project from the table above and open its folder.
 
-## 🛠️ Hardware Requirements
+3. Read the project's `README.md` for wiring, libraries, and setup.
 
-- **Arduino Uno/Nano/ESP32** (varies by project)
-- **Raspberry Pi 3/4** (for Python projects)
-- **Sensors & Modules** (detailed in each project)
-- **Breadboard & Jumper Wires**
-- **Power Supply** (5V/3.3V as needed)
+4. Arduino sketches: open the `.ino` in the Arduino IDE, install the libraries listed in the project README, and upload.
 
-## 📚 Project Structure
+5. Raspberry Pi scripts: install the Python dependencies listed in the project README (for example `pip install -r requirements.txt` if provided) and run the script with `python3 script.py`.
+
+## Repository Layout
 
 ```
 arduino-rpi-projects/
-├── project-name/
-│   ├── arduino/           # Arduino sketches (.ino)
-│   ├── raspberry_pi/      # Python scripts (.py)
-│   └── README.md          # Project documentation
-├── .gitignore
-└── README.md              # This file
+├── <project>/
+│   ├── arduino/          # Arduino/ESP32 sketches (.ino)
+│   ├── raspberry_pi/     # Python scripts (.py)
+│   └── README.md         # Project documentation
+├── .github/workflows/    # CI checks
+└── README.md
 ```
 
-## 🔧 Software Requirements
+## Contributing
 
-- **Arduino IDE** (1.8.19 or later)
-- **Python** (3.8 or later)
-- **Required Libraries** (listed in each project)
+See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
-## 📖 Documentation
+## Security
 
-Each project includes:
-- **Detailed setup instructions**
-- **Circuit diagrams**
-- **Code explanations**
-- **Troubleshooting guides**
-- **Hardware compatibility notes**
+See [SECURITY.md](SECURITY.md) for how to report vulnerabilities.
 
-## 🤝 Contributing
+## License
 
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 👨‍💻 Author
-
-**Vishnu Skandha**
-- GitHub: [@vishnuskandha](https://github.com/vishnuskandha)
-- BSc CS @ SRM | Passionate about AI, Embedded Systems, Cybersecurity & Software Dev
-
----
-
-⭐ **Star this repository** if you find it helpful!
+MIT, see [LICENSE](LICENSE).
