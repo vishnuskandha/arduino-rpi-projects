@@ -1,0 +1,51 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  repo-sanity:
+    name: Repo sanity checks
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: No private key material tracked
+        run: |
+          if git ls-files | grep -E '(^|/)(key|key\.pub|.*\.pem|.*\.ppk)$'; then
+            echo "::error::Private key material is tracked in the repository."
+            exit 1
+          fi
+          echo "No private key material tracked."
+
+      - name: All projects contain a README
+        run: |
+          missing=0
+          for dir in */; do
+            if [ -f "$dir/README.md" ]; then
+              continue
+            fi
+            if [ -z "$(git ls-files "$dir")" ]; then
+              continue
+            fi
+            echo "::warning::$dir has no README.md"
+            missing=1
+          done
+          if [ "$missing" -eq 1 ]; then
+            echo "Some projects are missing a README.md."
+            exit 1
+          fi
+          echo "All projects have a README.md."
+
+      - name: Arduino and Python source present
+        run: |
+          count_ino=$(git ls-files '*.ino' | wc -l)
+          count_py=$(git ls-files '*.py' | wc -l)
+          echo "Arduino sketches: $count_ino"
+          echo "Python scripts: $count_py"
+          if [ "$count_ino" -eq 0 ] || [ "$count_py" -eq 0 ]; then
+            echo "::error::Expected both .ino and .py sources in the repository."
+            exit 1
+          fi
