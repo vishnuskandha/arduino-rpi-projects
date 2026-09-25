@@ -1,4 +1,12 @@
+<div align="center">
+
 # Arduino & Raspberry Pi Projects
+
+**A multi-project collection spanning Arduino, ESP32, Raspberry Pi, IoT, robotics, sensing, and automation.**
+
+`Arduino · ESP32 · Raspberry Pi · MQTT`
+
+</div>
 
 
 <!-- README polish: repository metadata badges -->
